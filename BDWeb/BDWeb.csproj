@@ -8,4 +8,12 @@
     <Folder Include="Views\Projects\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\lib\styles\MainLayoutStyle.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.6" />
+  </ItemGroup>
+
 </Project>
