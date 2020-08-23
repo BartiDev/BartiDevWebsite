@@ -108,8 +108,17 @@ input, select {
 /*************************/
 
 
+/*****************************/
+/*        MAIN LAYOUT        */
+/*****************************/
+
+
 * {
-    font-family: 'Abel' ,sans-serif;
+    font-family: 'Abel',sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -153,7 +162,7 @@ header nav ul li a {
     header .header-brand {
         font-size: 32px;
         line-height: 50px;
-        margin: 25px 0px 25px 70px;
+        margin: 25px 0px 25px 30px;
         border-right: 2px solid #111;
         padding: 0 60px;
         float: left;
@@ -168,6 +177,7 @@ header nav ul li a {
     header nav ul li a {
         font-size: 28px;
         line-height: 50px;
+        margin: 0 10px;
     }
 }
 
@@ -181,7 +191,8 @@ header nav ul li a {
 
 footer {
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
+    height: 150px;
     background: #111;
     overflow: hidden;
 }
@@ -201,17 +212,18 @@ footer ul li a {
 .footer-socialMedia {
     width: 40px;
     float: right;
+    margin-right: 5px;
 }
 
 .footer-socialMedia img {
     width: 40px;
-    margin: 7px 0;
+    margin: 7px 0px;
 }
 
 @media only screen and (min-width: 1000px) {
 
     footer {
-        height: 200px;
+        height: 230px;
     }
 
     .footer-projects {
@@ -223,18 +235,109 @@ footer ul li a {
     }
 
     footer ul li {
-        line-height: 40px;
+        line-height: 47px;
         font-size: 20px;
         color: #fff;
     }
 
     .footer-socialMedia {
         width: 60px;
-        margin: 0 30px 0 0;
+        margin: 15px 30px 0 0;
     }
 
     .footer-socialMedia img {
         width: 60px;
-        margin: 7px 0;
+        margin: 14px 0;
+    }
+}
+
+
+
+/***********************/
+/*        INDEX        */
+/***********************/
+
+
+.index-welcoming {
+    background-image: url('../../images/photos/index-banner.jpg');
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.table-vertical-alignment {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-welcoming div h1 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    margin-bottom: 20px;
+}
+
+.index-welcoming div h2 {
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 24px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #111;
+}
+
+.index-menu a {
+    height: 80px;
+    display: block;
+    margin: 10px;
+    background-color: gainsboro;
+    text-align: center;
+}
+
+.index-menu a h3 {
+    color: #111;
+    font-size: 32px;
+    line-height 40px;
+    padding: 20px 0;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .index-welcoming {
+        max-height: 400px;
+    }
+
+    .index-welcoming div h1 {
+        max-width: 70%;
+        margin: 0 auto 20px auto;
+    }
+
+    .index-welcoming div h2 {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .index-menu a {
+        height: 200px;
+        width: 30%;
+        margin: 20px 16px;
+        float: left;
+    }
+
+    .index-menu a h3 {
+        font-size: 48px;
+        line-height 54px;
+        padding: 73px 0;
+        font-weight: 200;
     }
 }
