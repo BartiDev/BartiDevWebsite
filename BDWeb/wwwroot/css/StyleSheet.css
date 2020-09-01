@@ -1,0 +1,463 @@
+﻿
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+
+
+/*************************/
+/*        MY CODE        */
+/*************************/
+
+
+/*****************************/
+/*        MAIN LAYOUT        */
+/*****************************/
+
+
+* {
+    font-family: 'Abel',sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+/************************/
+/*        HEADER        */
+/************************/
+
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+header .header-brand {
+    font-weight: bold;
+    font-size: 28px;
+    color: #111;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 5px 0;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+
+    padding: 10px;
+}
+
+header nav ul li a {
+    font-size: 20px;
+    color: #111;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    header {
+        display: flex;
+    }
+
+    header .header-brand {
+        font-size: 32px;
+        line-height: 50px;
+        margin: 25px 0px 25px 30px;
+        border-right: 2px solid #111;
+        padding: 0 60px;
+        text-align: left;
+    }
+
+    header nav ul {
+        margin: 15px 0 25px 30px;
+
+    }
+
+    header nav ul li a {
+        font-size: 28px;
+        line-height: 50px;
+        margin: 0 10px;
+        display: flex;
+    }
+}
+
+
+/************************/
+/*        FOOTER        */
+/************************/
+
+
+.footer-projects {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    height: 150px;
+    background: #111;
+    display: flex;
+    flex-shrink: 0;
+}
+
+footer ul {
+    display: block;
+    margin-right: 40px;
+    list-style: none;
+}
+
+footer ul li a {
+    color: #fff;
+    line-height: 28px;
+}
+
+.footer-socialMedia {
+    width: 40px;
+    margin: 0 5px 0 auto;
+}
+
+.footer-socialMedia img {
+    width: 40px;
+    margin: 7px 0px;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    footer {
+        height: 230px;
+    }
+
+    .footer-projects {
+        display: block;
+    }
+
+    footer ul {
+        margin: 0 100px 0 70px;
+    }
+
+    footer ul li {
+        line-height: 47px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .footer-socialMedia {
+        width: 60px;
+        margin: 15px 30px 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-socialMedia img {
+        width: 60px;
+        margin: 14px 0;
+    }
+}
+
+
+
+/***********************/
+/*        INDEX        */
+/***********************/
+
+
+.index-welcoming {
+    background-image: url('../../images/photos/index-banner.jpg');
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.table-vertical-alignment {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-welcoming div h1 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    margin-bottom: 20px;
+}
+
+.index-welcoming div h2 {
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 24px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #111;
+}
+
+.index-menu a {
+    height: 80px;
+    display: block;
+    margin: 10px;
+    background-color: gainsboro;
+    text-align: center;
+}
+
+.index-menu a h3 {
+    color: #111;
+    font-size: 32px;
+    line-height 40px;
+    padding: 20px 0;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .index-welcoming {
+        max-height: 400px;
+    }
+
+    .index-welcoming div h1 {
+        max-width: 70%;
+        margin: 0 auto 20px auto;
+    }
+
+    .index-welcoming div h2 {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .index-menu {
+        display: flex;
+    }
+
+    .index-menu a {
+        height: 200px;
+        width: 30%;
+        margin: 20px 16px;
+    }
+
+    .index-menu a h3 {
+        font-size: 48px;
+        line-height 54px;
+        padding: 73px 0;
+        font-weight: 200;
+    }
+}
+
+
+/**************************/
+/*        ABOUT ME        */
+/**************************/
+
+.about-me {
+    margin-bottom: 20px;
+}
+
+.about-me h1 {
+    font-size: 40px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.about-me h2 {
+    width: 100%;
+    font-size: 32px;
+    margin: 15px 10px;
+    border-bottom: solid 1px #aaa;
+}
+
+.about-me p {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px
+}
+
+
+/*********************************************/
+/*        GET ALL PROJECTS CATEGORIES        */
+/*********************************************/
+
+
+.all-proj-cat {
+    display: flex;
+    flex-direction: column;
+}
+
+.all-proj-cat ul {
+    list-style-type: none;
+}
+
+.all-proj-cat ul a {
+    text-decoration: none;
+    color: #111;
+}
+
+.all-proj-cat ul a li {
+    margin: 20px 10px;
+    width: calc(100% - 20px);
+    height: 100px;
+    display: table;
+    list-style-type: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.all-proj-cat ul a li p {
+    display: table-cell;
+    font-size: 26px;
+    padding-left: calc(10%);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.all-proj-cat-item1 {
+    background-image: url(/images/photos/c-sharp-transparent.png);
+
+}
+
+.all-proj-cat-item2 {
+    background-image: url(/images/photos/data-science.png);
+
+}
+
+.all-proj-cat-item3 {
+    background-image: url(/images/photos/others.png);
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .all-proj-cat ul a li {
+        height: 200px;
+    }
+
+    .all-proj-cat ul a li p {
+        padding-left: 0;
+        font-size: 48px;
+    }
+
+}

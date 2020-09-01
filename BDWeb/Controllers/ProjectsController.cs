@@ -8,14 +8,19 @@ namespace BDWeb.Controllers
 {
     public class ProjectsController : Controller
     {
-        public string GetAllProjectsCategories()
+        public ViewResult GetAllProjectsCategories()
         {
-            return "all projects categories";
+            return View();
         }
 
-        public string GetAllMachineLearningProjects()
+        public string GetAllCSharpProjects()
         {
-            return "machine learning projescts";
+            return "c# projects";
+        }
+
+        public string GetAllDataScienceAndMLProjects()
+        {
+            return "data science and ML projects";
         }
     }
 }

@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "_MainLayout";
+}
+
+<div class="wrapper all-proj-cat">
+    <ul>
+        <a asp-controller="Projects" asp-action="GetAllCSharpProjects">
+            <li class="border border-secondary rounded-right all-proj-cat-item1">
+                <p>C# Projects</p>
+            </li>
+        </a>
+        <a asp-controller="Projects" asp-action="GetAllDataScienceAndMLProjects">
+            <li class="border border-secondary rounded-right all-proj-cat-item2">
+                <p>Data Science and<br>Machine Learning<br>Projects</p>
+            </li>
+        </a>
+        <a>
+            <li class="border border-secondary rounded-right all-proj-cat-item3">
+                <p>Other Projects</p>
+            </li>
+        </a>
+    </ul>
+</div>

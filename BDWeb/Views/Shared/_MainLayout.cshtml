@@ -5,47 +5,52 @@
     <meta name="viewport" content="width=device-width" />
     <title>BartiDev</title>
     <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href="~/lib/styles/MainLayoutStyle.css" rel="stylesheet" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Kalam:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <a href="/" class="header-brand">BartiDev</a>
-        <nav>
-            <ul>
-                <li><a href="/projects/getAllProjectsCategories">Projects</a></li>
-                <li><a href="/home/aboutMe">About Me</a></li>
-                <li><a href="/home/contant">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="content">
+        <header>
+            <a asp-controller="Home" asp-action="Index" class="header-brand">BartiDev</a>
+            <nav>
+                <ul>
+                    <li><a asp-controller="Projects" asp-action="GetAllProjectsCategories">Projects</a></li>
+                    <li><a asp-controller="Home" asp-action="AboutMe">About Me</a></li>
+                    <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <div>
-        @RenderBody()
+        <div>
+            @RenderBody()
+        </div>
     </div>
 
-    <footer>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects/getAllProjectsCategories">Projects</a></li>
-            <li><a href="/home/aboutMe">About Me</a></li>
-            <li><a href="home/contact">Contact</a></li>
-        </ul>
-        <ul class="footer-projects">
-            <li><a>Latest Projects</a></li>
-            <li><a href="#">AGH Student</a></li>
-            <li><a href="#">ES-SYSTEM Intern</a></li>
-        </ul>
-        <div class="footer-socialMedia">
-            <a href="https://github.com/BartiDev">
-                <img src="~/images/logos/github-icon.png" alt="github icon">
-            </a>
-            <a href="https://www.linkedin.com/in/bart%C5%82omiej-nowak-47a9531a3/">
-                <img src="~/images/logos/linkedin-icon.png" alt="linkedin icon">
-            </a>
-        </div>
-    </footer>
+
+        <footer>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Projects" asp-action="GetAllProjectsCategories">Projects</a></li>
+                <li><a asp-controller="Home" asp-action="AboutMe">About Me</a></li>
+                <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+            </ul>
+            <ul class="footer-projects">
+                <li><a>Latest Projects</a></li>
+                <li><a href="#">project 1</a></li>
+                <li><a href="#">project 2</a></li>
+            </ul>
+            <div class="footer-socialMedia">
+                <a href="https://github.com/BartiDev">
+                    <img src="~/images/logos/github-icon.png" alt="github icon">
+                </a>
+                <a href="https://www.linkedin.com/in/bart%C5%82omiej-nowak-47a9531a3/">
+                    <img src="~/images/logos/linkedin-icon.png" alt="linkedin icon">
+                </a>
+            </div>
+        </footer>
+ 
+
 
 </body>
 </html>

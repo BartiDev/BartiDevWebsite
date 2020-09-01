@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Projects\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\lib\styles\MainLayoutStyle.css" />
   </ItemGroup>
 
